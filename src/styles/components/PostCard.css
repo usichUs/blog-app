@@ -1,0 +1,15 @@
+.blog__post {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    gap: 30px;
+}
+
+.blog__text {
+    font-size: 16px;
+    color: #C0C5D0;
+}
+
+.blog__post img {
+    height: 240px;
+}

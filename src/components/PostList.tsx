@@ -1,16 +1,20 @@
-import { FC } from "react";
-import { PostCard, Post } from "./PostCard";
+import { PostCard } from "./PostCard";
+import { Post } from "../entities/Post";
 
 type PostListProps = {
-  data: NonNullable<Post[] | null>;
+  posts: Post[];
 };
 
-export const PostList: FC<PostListProps> = ({ data }) => {
+export const PostList = ({ posts }: PostListProps) => {
   return (
     <>
-      {data.map((el) => (
-        <PostCard {...el} key={el.id} />
-      ))}
+      <h3 className="blog__subtitle">All blog posts</h3>
+      <div className="blog__posts-wrapper">
+        {" "}
+        {posts.map((el) => (
+          <PostCard {...el} key={el.id} />
+        ))}
+      </div>
     </>
   );
 };

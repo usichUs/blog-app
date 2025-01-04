@@ -1,0 +1,13 @@
+.blog__subtitle {
+  font-size: 24px;
+  margin: 30px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.blog__posts-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}

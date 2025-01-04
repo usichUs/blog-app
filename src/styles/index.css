@@ -1,0 +1,9 @@
+@import url('normalize.css');
+@import url('App.css');
+
+@import url('pages/home.css');
+
+@import url('components/PostList.css');
+@import url('components/PostCard.css');
+@import url('components/Badge.css');
+@import url('components/BadgeList.css');

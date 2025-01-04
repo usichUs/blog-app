@@ -1,0 +1,12 @@
+.badge {
+    max-width: 400px;
+    color: #6941c6;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.badge p {
+    text-align: center;
+    padding: 3px 7px;
+    font-weight: 500;
+}

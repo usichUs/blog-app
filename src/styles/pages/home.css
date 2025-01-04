@@ -1,0 +1,8 @@
+.blog__title {
+    font-size: 240px;
+    text-transform: uppercase;
+    text-align: center;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 30px 0;
+}

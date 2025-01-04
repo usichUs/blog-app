@@ -1,14 +1,10 @@
-import { fetchPosts } from "./api/fetchPosts.js";
-import { PostList } from "./components/PostList.js";
-import "./styles/App.css";
+import { Home } from "./pages/Home.js";
+import "./styles/index.css";
 
 function App() {
-  const posts = fetchPosts({ url: "http://localhost:8000/posts" });
-
   return (
     <>
-      <h1>Hello World</h1>
-      {posts ? <PostList data={posts} /> : <p>..loading</p>}
+      <Home />
     </>
   );
 }
