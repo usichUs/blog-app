@@ -2,7 +2,7 @@ import { fetchPosts } from "../api/fetchPosts";
 import { PostList } from "../components/PostList";
 
 export const Home = () => {
-  const { posts, error } = fetchPosts({ url: "/api/posts" });
+  const { data, error } = fetchPosts({ url: "/api/posts" });
 
   return (
     <div>
@@ -11,8 +11,8 @@ export const Home = () => {
         {" "}
         {error ? (
           <h2> Error: {error}</h2>
-        ) : posts ? (
-          <PostList posts={posts} />
+        ) : data ? (
+          <PostList posts={data} />
         ) : (
           <p>..loading</p>
         )}

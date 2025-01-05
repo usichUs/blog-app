@@ -11,7 +11,7 @@ export const BadgeList = () => {
   return (
     <div className="badges-wrapper">
       {randomCategories.map((el) => (
-        <Badge title={el} />
+        <Badge title={el} key={el} />
       ))}
     </div>
   );

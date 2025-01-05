@@ -1,10 +1,17 @@
 import { Home } from "./pages/Home.js";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./styles/index.css";
+import { PostPage } from "./pages/PostPage.js";
 
 function App() {
   return (
     <>
-      <Home />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts/:id" element={<PostPage />} />
+        </Routes>
+      </Router>
     </>
   );
 }
