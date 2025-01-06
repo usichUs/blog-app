@@ -1,0 +1,14 @@
+.post-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+@media (max-width: 630px) {
+  .post-page {
+    flex-direction: column;
+  }
+}

@@ -1,4 +1,4 @@
-import { PostComment } from "../entities/Comment";
+import { PostComment } from "../entities/PostComment";
 import { useFetch } from "../hooks/useFetch";
 
 type fetchPostsProps = {
@@ -11,6 +11,3 @@ export const fetchComments = ({ url, post_id }: fetchPostsProps) => {
   console.log(postUrl);
   return useFetch<PostComment[]>({ url: postUrl });
 };
-
-// https://jsonplaceholder.typicode.com/posts/1/comments
-// api/posts/1/comments

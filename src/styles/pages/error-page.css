@@ -1,0 +1,15 @@
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error__msg {
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.error__msg span {
+  color: #d624be;
+}

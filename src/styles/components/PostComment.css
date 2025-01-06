@@ -1,0 +1,19 @@
+.post__comment {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: #000;
+  max-width: 390px;
+  border-radius: 20px;
+  padding: 15px;
+  gap: 15px;
+}
+.comment__email {
+  color: #650794;
+}
+.comment__name {
+  text-transform: uppercase;
+}
+.comment__body {
+  color: #5c5163;
+}

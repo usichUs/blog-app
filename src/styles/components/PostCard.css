@@ -1,15 +1,18 @@
 .blog__post {
-    display: flex;
-    flex-direction: column;
-    width: 390px;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  gap: 30px;
+  border: 1px solid #fff;
+  padding: 30px;
+  border-radius: 40px;
 }
 
 .blog__text {
-    font-size: 16px;
-    color: #C0C5D0;
+  font-size: 16px;
+  color: #c0c5d0;
 }
 
 .blog__post img {
-    height: 240px;
+  height: 240px;
 }

@@ -1,9 +1,14 @@
-@import url('normalize.css');
-@import url('App.css');
+@import url("normalize.css");
+@import url("App.css");
 
-@import url('pages/home.css');
+@import url("pages/home.css");
+@import url("pages/post-page.css");
+@import url("pages/error-page.css");
 
-@import url('components/PostList.css');
-@import url('components/PostCard.css');
-@import url('components/Badge.css');
-@import url('components/BadgeList.css');
+@import url("components/PostList.css");
+@import url("components/PostCard.css");
+@import url("components/Badge.css");
+@import url("components/BadgeList.css");
+@import url("components/PostComment.css");
+@import url("components/PostComments.css");
+@import url("components/Loader.css");

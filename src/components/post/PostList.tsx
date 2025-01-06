@@ -1,5 +1,5 @@
 import { PostCard } from "./PostCard";
-import { Post } from "../entities/Post";
+import { Post } from "../../entities/Post";
 
 type PostListProps = {
   posts: Post[];
