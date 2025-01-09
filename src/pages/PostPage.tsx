@@ -9,8 +9,11 @@ import { ErrorPage } from "./ErrorPage";
 export const PostPage = () => {
   const { id } = useParams<{ id: string }>();
 
-  if (!id) {
-    return <ErrorPage error="problems with id" />;
+  const postId = Number(id);
+  if (!id || isNaN(postId) || postId < 1 || postId > 100) {
+    return (
+      <ErrorPage error="Invalid post ID. Please provide an ID between 1 and 100." />
+    );
   }
 
   const { data, error } = fetchPost({
